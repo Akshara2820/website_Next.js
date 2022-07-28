@@ -5,19 +5,13 @@
 
 .heading-home{
 font-family: Nunito;
-width: 921px;
-
-font-weight: 800px;
 font-size: 64px;
 text-align: center;
-line-height: 87.3px;
 padding: 86px;
 }
 .head2{
   font-family: Nunito;
   font-style:normal;
-  width: 466px;
-  
   font-size: 20px;
   font-weight: 400px;
   line-height: 150%;
@@ -36,14 +30,32 @@ padding: 86px;
 .about-paragrah{
   padding: 35px;
   width: 533px;
+  
+}
+.service_card{
+  width: 310px;
+  padding: 5%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
 }
 .service-contanier{
-  width: 1264px;
   margin-left: 300px;
 }
 .service-heading{
   font-family: 'Nunito';
 }
+
+.project-card2{
+  margin:auto ;
+}
+.project-card2:hover{
+  transform: rotate(4deg);
+}
+
+
+
 .project-button{
   margin-left: 880px;
   margin-top: 40px;
@@ -55,4 +67,117 @@ left: 0px;
 top: 5028px;
 
 background: #383638;
+}
+
+@keyframes rotation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(359deg);
+  }
+}
+
+
+
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+.peopletalk-hover{
+  animation:all 1s;
+}
+.peopletalk-hover:hover{
+  transform: translateY(-10px) translateZ(0px);
+}
+
+@media only screen and (min-width:80px) and (max-width:479px){
+  /* Mobile view */
+
+  .Link{
+    display: none;
+  }
+  .heading-home{
+    font-size: 44px;
+  }
+  
+
+.main_about{
+  flex-direction:column-reverse;
+}
+.main_about_image{
+  width: 100%;
+  margin: 2rem;
+}
+.about_text{
+  font-size: 44px;
+}
+.about_text_card {
+  width: 100%;
+  font-size: 24px;
+}
+
+.service{
+  flex-direction: column;
+}
+.service-heading{
+  font-size: 44px;
+}
+
+.service_card1{
+  flex-wrap: wrap;
+}
+.service_card2{
+  flex-wrap: wrap;
+}
+
+
+.project-card{
+  flex-direction: column;
+  margin-top: 50px;
+}
+.project-card2{
+  margin-top: 60px;
+}
+
+
+
+.peopletalk{
+  display: flex;
+  flex-wrap: wrap;
+}
+.peopletalk_dots_image{
+  display:none;
+  flex: unset;
+}
+.peopletalk_card {
+width: 100%;
+margin-top: 3rem;
+}
+
+.main_collabration{
+  flex-direction: column-reverse;
+}
+.collabration_text{
+  font-size: 44px;
+  margin-top: 80px;
+}
+.collabration_text_{
+  font-size: 14px;
+}
+
+.collabration_image{
+  flex: none;
+  width: 100%;
+  height: 250px;
+}
+.footer_hr{
+  width: auto;
+}
+.footer_icon{
+  gap: 10px;
+  margin-bottom: 0px;
+}
+
 }

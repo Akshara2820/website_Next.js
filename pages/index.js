@@ -23,7 +23,7 @@ export default function Home() {
 <Project/>
 <Peopletalk/>
 <Collaboration/>
-<Footer/>
+<Footer/> 
 
 
 
