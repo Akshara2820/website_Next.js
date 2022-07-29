@@ -2,57 +2,115 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.heading-home{
-font-family: Nunito;
-width: 921px;
-
-font-weight: 800px;
-font-size: 64px;
-text-align: center;
-line-height: 87.3px;
-padding: 86px;
-}
-.head2{
+.heading-home {
   font-family: Nunito;
-  font-style:normal;
-  width: 466px;
-  
+  font-weight: 800px;
+  font-size: 64px;
+  text-align: center;
+  padding: 86px;
+}
+.head2 {
+  font-family: Nunito;
+  font-style: normal;
   font-size: 20px;
   font-weight: 400px;
   line-height: 150%;
-  color:gray;
+  color: gray;
   text-align: center;
 }
+.blue_dots {
+  animation: mover 1s infinite alternate;
+}
 
-.start-project{
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.start-project {
   padding: 12px 50px;
   color: white;
-  width: 201px;
-  background: #377DFF;
+  background: #377dff;
   box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
   border-radius: 24px;
 }
-.about-paragrah{
-  padding: 35px;
-  width: 533px;
+.start-project1 {
+  border-color: #377dff;
+  color: #377dff;
+  padding: 12px 50px;
+  box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
+  border-radius: 24px;
 }
-.service-contanier{
-  width: 1264px;
+.about-paragrah {
+  padding: 35px;
+}
+.service-contanier {
   margin-left: 300px;
 }
-.service-heading{
-  font-family: 'Nunito';
+.service-heading {
+  font-family: "Nunito";
 }
-.project-button{
+.project-button {
   margin-left: 880px;
   margin-top: 40px;
 }
-.navbar-contanier{
-  width: 1264px;
-height: 548px;
-left: 0px;
-top: 5028px;
+.navbar-contanier {
 
-background: #383638;
+  height: 548px;
+  left: 0px;
+  top: 5028px;
+
+  background: #383638;
+}
+.Animation {
+  animation: rotation 60s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.container {
+  width: 100%;
+}
+
+/* ************** Mobile View **************** */
+
+@media only screen and (max-width: 450px) {
+  /* Mobile view  */
+
+  .nav_link {
+    display: none;
+  }
+  .heading-home{
+    font-size: 40px;
+  }
+  .home-img {
+    margin-left: 120px;
+    display: inline-block;
+  }
+  .homeCard {
+    display: none;
+  }
+  .blue_dots {
+    display: none;
+  }
+  .heading-about {
+    margin-top: 35px;
+    text-align: center;
+  }
+
+  .about-paragraph {
+    margin-top: 30px;
+    flex-direction: column-reverse;
+  }
+
+
 }

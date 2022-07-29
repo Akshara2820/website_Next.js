@@ -4,36 +4,32 @@ function About() {
   return (
     <>
       <div id="about">
-        <h3 className="text-center text-2xl sm:text-[28px] text-[#377DFF] dark:text-[#E2E2E2] font-[Quicksand] mt-44 font-bold">
+        <h3 className="about-blue text-2xl text-center  text-[#377DFF] font-[Nunito] font-bold mt-10 ">
           About Us
         </h3>
-        <h1 className=" font-[Nunito] text-center text-[55px]  text-[#1D1D1D]  py-7 "> Our Teammate</h1>
-        <div className=" flex">
-          <img
-            className="w-[fit-content] ml-80"
-            src="./About.png"
-            alt="loading....."
-          />
-          <div className="about-paragrah">
-            <p className="font-Quicksand text-[20px] text-[#464646] dark:text-[#E2E2E2]">
-              We move with make a Creative Strategy for help your 
-              business goal, we help to improve your income by a services
-              we have. make your content look interesting and make
-               people look for your business<br>
-               </br>
-               <br></br>
-             
-               We move with make a Creative Strategy for help your 
-               business goal, we help to improve your income by a services
-               we have. make your content look interesting and make
-              people look for your business
-              
+        <h1 className=" heading-about font-[Nunito] text-center text-[50px]  text-[#1D1D1D]  py-7 ">
+          Our Teammate
+        </h1>
+        <div className="about-paragraph container flex justify-center mx-auto gap-12 flex.5  ">
+           <div className="">
+            <img className=" " src="./About.png" alt="loading....." />
+          </div> 
+
+          <div className="flex.5 unset">
+            <p className="">
+              We move with make a Creative Strategy for help your business goal,
+              we help to improve your income by a services we have. make your
+              content look interesting and make people look for your business
             </p>
-            <div>
+            <br></br>
+            <p className="">
+              We move with make a Creative Strategy for help your business goal,
+              we help to improve your income by a services we have. make your
+              content look interesting and make people look for your business
+            </p>
+            <div className="flex justify-center gap-3">
               <button className=" start-project mt-10">About Us</button>
-              <button className=" ml-6 text-[#377DFF]  border-[1px] border-[#377DFF] py-3 px-10 rounded-full ">
-                Our Story
-              </button>
+              <button className=" start-project1 mt-10  ">Our Story</button>
             </div>
           </div>
         </div>
