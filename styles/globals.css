@@ -2,16 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-.heading-home {
-  font-family: Nunito;
-  font-weight: 800px;
-  font-size: 64px;
-  text-align: center;
-  padding: 86px;
+
+.heading-home{
+font-family: Nunito;
+font-size: 64px;
+text-align: center;
+padding: 86px;
 }
-.head2 {
+.head2{
   font-family: Nunito;
-  font-style: normal;
+  font-style:normal;
   font-size: 20px;
   font-weight: 400px;
   line-height: 150%;
@@ -38,79 +38,191 @@
   box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
   border-radius: 24px;
 }
-.start-project1 {
-  border-color: #377dff;
-  color: #377dff;
-  padding: 12px 50px;
-  box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
-  border-radius: 24px;
-}
-.about-paragrah {
+.about-paragrah{
   padding: 35px;
+  width: 533px;
+  
 }
-.service-contanier {
+
+.service_card{
+  width: 310px;
+  padding: 5%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+.service-contanier{
   margin-left: 300px;
 }
 .service-heading {
   font-family: "Nunito";
+
 }
-.project-button {
+.project-card{
+  justify-content: center;
+}
+
+
+.project-card2:hover{
+  transform: rotate(4deg);
+}
+
+
+
+.project-button{
   margin-left: 880px;
   margin-top: 40px;
 }
+
+
+.peopletalk{
+justify-content: center;
+}
+.peopletalk-heading{
+  font-family: Nunito;
+font-size: 64px;
+text-align: center;
+padding: 86px;
+}
 .navbar-contanier {
 
-  height: 548px;
-  left: 0px;
-  top: 5028px;
+background: #383638;
+}
 
-  background: #383638;
-}
-.Animation {
-  animation: rotation 60s infinite linear;
-}
-@keyframes rotation {
-  from {
+@keyframes rotation{
+  from{
     transform: rotate(0deg);
   }
-  to {
+  to{
     transform: rotate(359deg);
   }
 }
-.container {
-  width: 100%;
+
+
+
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
 }
 
-/* ************** Mobile View **************** */
+.peopletalk-hover{
+  animation:all 1s;
+}
+.peopletalk-hover:hover{
+  transform: translateY(-10px) translateZ(0px);
+}
 
-@media only screen and (max-width: 450px) {
-  /* Mobile view  */
 
-  .nav_link {
+
+
+
+@media only screen and (min-width:80px) and (max-width:479px){
+  /* Mobile view */
+
+  .Link{
     display: none;
   }
   .heading-home{
-    font-size: 40px;
+    font-size: 44px;
   }
-  .home-img {
-    margin-left: 120px;
-    display: inline-block;
-  }
-  .homeCard {
-    display: none;
-  }
-  .blue_dots {
-    display: none;
-  }
-  .heading-about {
-    margin-top: 35px;
-    text-align: center;
-  }
+  
 
-  .about-paragraph {
-    margin-top: 30px;
-    flex-direction: column-reverse;
-  }
+.main_about{
+  flex-direction:column-reverse;
+}
+.main_about_image{
+  width: 100%;
+  margin: 2rem;
+}
+.about_text{
+  font-size: 44px;
+}
+.about_text_card {
+  width: 100%;
+  font-size: 24px;
+}
+.service-main{
+  width: 100%;
+}
 
+.service{
+  flex-direction: column;
+}
+.our-service{
+  text-align:  center;
+}
+.service-heading{
+  font-size: 24px;
+  text-align: center;
+
+}
+.service-paragraph{
+  text-align: center;
+}
+
+.service_card1{
+  flex-wrap: wrap;
+}
+.service_card2{
+  flex-wrap: wrap;
+}
+
+
+.project-card{
+  flex-direction: column;
+ 
+}
+.project-card2{
+  margin-top: 60px;
+}
+
+.peropletalk_ {
+  width: 100%;
+}
+
+
+
+.peopletalk-heading{
+  font-size: 24px;
+  text-align: center;
+}
+
+.peopletalk{
+  display: flex;
+  flex-wrap: wrap;
+}
+.peopletalk_dots_image{
+  display:none;
+  flex: unset;
+}
+.peopletalk_card {
+width: 100%;
+margin-top: 3rem;
+}
+
+.main_collabration{
+  flex-direction: column-reverse;
+}
+.collabration_text{
+  font-size: 44px;
+  margin-top: 80px;
+}
+.collabration_text_{
+  font-size: 14px;
+}
+
+.collabration_image{
+  flex: none;
+  width: 100%;
+  height: 250px;
+}
+.footer_hr{
+  width: auto;
+}
+.footer_icon{
+  gap: 10px;
+  margin-bottom: 0px;
+}
 
 }
