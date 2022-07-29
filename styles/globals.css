@@ -74,7 +74,12 @@ padding: 86px;
   margin-left: 880px;
   margin-top: 40px;
 }
-
+.heading-project{
+  font-family: Nunito;
+font-size: 64px;
+text-align: center;
+padding: 86px;
+}
 
 .peopletalk{
 justify-content: center;
@@ -177,16 +182,14 @@ background: #383638;
   margin-top: 60px;
 }
 
-.peropletalk_ {
-  width: 100%;
-}
 
 
-
-.peopletalk-heading{
+.heading-project{
   font-size: 24px;
   text-align: center;
 }
+
+
 
 .peopletalk{
   display: flex;
@@ -199,6 +202,11 @@ background: #383638;
 .peopletalk_card {
 width: 100%;
 margin-top: 3rem;
+}
+.peopletalk-heading{
+  font-size: 24px;
+  text-align: center;
+  margin-top: -50px;
 }
 
 .main_collabration{

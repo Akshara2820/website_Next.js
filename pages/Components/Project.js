@@ -9,7 +9,7 @@ function Project() {
             Our Portfolio
           </h3>
          
-          <h1 className="heading-home mx-auto -mt-10">What do we do</h1>
+          <h1 className="heading-project mx-auto -mt-10">What do we do</h1>
           <h3 className="head2 mx-auto -mt-10">
             all projects that we have already done ,<br></br> proven can help to use more
             comfortable, then can used by client from our business

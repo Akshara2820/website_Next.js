@@ -11,7 +11,7 @@ function Header() {
               <img className="w-12 h-12" src="./MainLogo.png"></img>
             </div>
             <div>
-              <img className="tittle-logo box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%" src="./MainLogo.png"></img>
+              
             </div>
             <div>
               <h3 className=" text-[#464646] dark:text-[#E2E2E2] text-base font-Quicksand  ">Agency</h3>
